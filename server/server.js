@@ -26,7 +26,7 @@ massive(CONNECTION_STRING).then(db => {
 })
 
 app.get('/auth/callback', async (req, res) => {
-    //code from auth) on req.query.code 
+    //code from auth0 on req.query.code 
     let payload = {
         client_id: REACT_APP_CLIENT_ID,
         client_secret: CLIENT_SECRET,
